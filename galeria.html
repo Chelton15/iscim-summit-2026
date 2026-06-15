@@ -2,22 +2,12 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Galeria | ISCIM Summit 2026</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23F57C00'/><text y='.9em' font-size='72' font-family='serif' font-weight='900' fill='white' x='10'>I</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .gallery-thumb {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    .gallery-thumb span {
-      display: none;
-    }
-  </style>
 </head>
 <body>
 
@@ -26,10 +16,19 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <div class="logo-icon">
-          <img src="img/iscim.png" alt="ISCIM Logo" style="width:100%; height:100%; object-fit:contain;">
+          <img src="img/iscim.png" alt="ISCIM Logo">
         </div>
         <span class="logo-text">ISCIM <span>Summit</span></span>
       </a>
+      
+      <input type="checkbox" id="menu-toggle">
+      
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      
       <ul class="nav-links">
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre</a></li>
@@ -39,145 +38,89 @@
         <li><a href="galeria.html" class="active">Galeria</a></li>
         <li><a href="contacto.html" class="nav-cta">Inscrever-se</a></li>
       </ul>
-      <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
-        <span></span><span></span><span></span>
-      </div>
     </div>
   </div>
 </nav>
 
-<section class="section page-header">
-  <div class="container">
-    <h1 class="page-title">Galeria de <span>Memórias</span></h1>
-    <p class="page-desc">Registos das edições anteriores e momentos inspiradores do ISCIM Summit</p>
-  </div>
-</section>
-
-<section class="section gallery-page">
-  <div class="container">
-    <div class="gallery-filter">
-      <button class="filter-btn active" data-filter="all">Todos</button>
-      <button class="filter-btn" data-filter="palestras">Palestras</button>
-      <button class="filter-btn" data-filter="workshops">Workshops</button>
-      <button class="filter-btn" data-filter="networking">Networking</button>
-      <button class="filter-btn" data-filter="premios">Prémios</button>
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Galeria de <span>Memórias</span></h1>
+      <p class="page-desc">Registos das edições anteriores e momentos inspiradores do ISCIM Summit</p>
     </div>
+  </section>
 
-    <div class="gallery-grid">
-      <!-- Imagem 01 - Palestra Magna -->
-      <div class="gallery-item wide" data-cat="palestras">
-        <div class="gallery-thumb" style="background-image: url('img/01.jpeg');">
-          <span></span>
-        </div>
-        <div class="gallery-overlay"><span>Palestra Magna · Auditório do ISCIM · 2025</span></div>
+  <section class="section gallery-page">
+    <div class="container">
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="palestras">Palestras</button>
+        <button class="filter-btn" data-filter="workshops">Workshops</button>
+        <button class="filter-btn" data-filter="networking">Networking</button>
+        <button class="filter-btn" data-filter="premios">Prémios</button>
       </div>
 
-      <!-- Imagem 02 - Workshop de Produção Audiovisual -->
-      <div class="gallery-item" data-cat="workshops">
-        <div class="gallery-thumb" style="background-image: url('img/02.jpeg');">
-          <span></span>
+      <div class="gallery-grid">
+        <div class="gallery-item wide" data-cat="palestras">
+          <div class="gallery-thumb" style="background-image: url('img/01.jpeg');"></div>
+          <div class="gallery-overlay"><span>Palestra Magna · Auditório do ISCIM · 2025</span></div>
         </div>
-        <div class="gallery-overlay"><span>Workshop de Produção Audiovisual · Estúdio ISCIM · 2025</span></div>
-      </div>
-
-      <!-- Imagem 03 - Sessão de Networking -->
-      <div class="gallery-item tall" data-cat="networking">
-        <div class="gallery-thumb" style="background-image: url('img/03.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="workshops">
+          <div class="gallery-thumb" style="background-image: url('img/02.jpeg');"></div>
+          <div class="gallery-overlay"><span>Workshop de Produção Audiovisual · Estúdio ISCIM · 2025</span></div>
         </div>
-        <div class="gallery-overlay"><span>Sessão de Networking · Lounge ISCIM · 2025</span></div>
-      </div>
-
-      <!-- Imagem 04 - Painel de Comunicação Digital -->
-      <div class="gallery-item" data-cat="palestras">
-        <div class="gallery-thumb" style="background-image: url('img/04.jpeg');">
-          <span></span>
+        <div class="gallery-item tall" data-cat="networking">
+          <div class="gallery-thumb" style="background-image: url('img/03.jpeg');"></div>
+          <div class="gallery-overlay"><span>Sessão de Networking · Lounge ISCIM · 2025</span></div>
         </div>
-        <div class="gallery-overlay"><span>Painel de Comunicação Digital · Sala de Conferências · 2025</span></div>
-      </div>
-
-      <!-- Imagem 05 - Prémios ISCIM -->
-      <div class="gallery-item" data-cat="premios">
-        <div class="gallery-thumb" style="background-image: url('img/05.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="palestras">
+          <div class="gallery-thumb" style="background-image: url('img/04.jpeg');"></div>
+          <div class="gallery-overlay"><span>Painel de Comunicação Digital · Sala de Conferências · 2025</span></div>
         </div>
-        <div class="gallery-overlay"><span>Prémios ISCIM 2025 · Gala de Premiação</span></div>
-      </div>
-
-      <!-- Imagem 06 - Workshop de Design Gráfico -->
-      <div class="gallery-item" data-cat="workshops">
-        <div class="gallery-thumb" style="background-image: url('img/06.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="premios">
+          <div class="gallery-thumb" style="background-image: url('img/05.jpeg');"></div>
+          <div class="gallery-overlay"><span>Prémios ISCIM 2025 · Gala de Premiação</span></div>
         </div>
-        <div class="gallery-overlay"><span>Workshop de Design Gráfico · Laboratório de Informática</span></div>
-      </div>
-
-      <!-- Imagem 07 - Festa de Encerramento -->
-      <div class="gallery-item wide" data-cat="networking">
-        <div class="gallery-thumb" style="background-image: url('img/07.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="workshops">
+          <div class="gallery-thumb" style="background-image: url('img/06.jpeg');"></div>
+          <div class="gallery-overlay"><span>Workshop de Design Gráfico · Laboratório de Informática</span></div>
         </div>
-        <div class="gallery-overlay"><span>Festa de Encerramento 2025 · Celebração ISCIM</span></div>
-      </div>
-
-      <!-- Imagem 08 - Melhor Projecto Académico -->
-      <div class="gallery-item" data-cat="premios">
-        <div class="gallery-thumb" style="background-image: url('img/08.jpeg');">
-          <span></span>
+        <div class="gallery-item wide" data-cat="networking">
+          <div class="gallery-thumb" style="background-image: url('img/07.jpeg');"></div>
+          <div class="gallery-overlay"><span>Festa de Encerramento 2025 · Celebração ISCIM</span></div>
         </div>
-        <div class="gallery-overlay"><span>Melhor Projecto Académico · Premiação</span></div>
-      </div>
-
-      <!-- Imagem 09 - Keynote 2024 -->
-      <div class="gallery-item" data-cat="palestras">
-        <div class="gallery-thumb" style="background-image: url('img/09.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="premios">
+          <div class="gallery-thumb" style="background-image: url('img/08.jpeg');"></div>
+          <div class="gallery-overlay"><span>Melhor Projecto Académico · Premiação</span></div>
         </div>
-        <div class="gallery-overlay"><span>Keynote 2024 · O Futuro da Comunicação Digital</span></div>
-      </div>
-
-      <!-- Imagem 10 - Workshop de Podcast -->
-      <div class="gallery-item" data-cat="workshops">
-        <div class="gallery-thumb" style="background-image: url('img/10.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="palestras">
+          <div class="gallery-thumb" style="background-image: url('img/09.jpeg');"></div>
+          <div class="gallery-overlay"><span>Keynote 2024 · O Futuro da Comunicação Digital</span></div>
         </div>
-        <div class="gallery-overlay"><span>Workshop de Podcast · Estúdio de Áudio</span></div>
-      </div>
-
-      <!-- Imagem 11 - Conferência de Jornalismo Digital -->
-      <div class="gallery-item" data-cat="palestras">
-        <div class="gallery-thumb" style="background-image: url('img/11.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="workshops">
+          <div class="gallery-thumb" style="background-image: url('img/10.jpeg');"></div>
+          <div class="gallery-overlay"><span>Workshop de Podcast · Estúdio de Áudio</span></div>
         </div>
-        <div class="gallery-overlay"><span>Conferência de Jornalismo Digital · 2025</span></div>
-      </div>
-
-      <!-- Imagem 12 - Coffee Break Networking -->
-      <div class="gallery-item" data-cat="networking">
-        <div class="gallery-thumb" style="background-image: url('img/12.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="palestras">
+          <div class="gallery-thumb" style="background-image: url('img/11.jpeg');"></div>
+          <div class="gallery-overlay"><span>Conferência de Jornalismo Digital · 2025</span></div>
         </div>
-        <div class="gallery-overlay"><span>Coffee Break · Networking entre participantes</span></div>
-      </div>
-
-      <!-- Imagem 13 - Exposição de Projectos -->
-      <div class="gallery-item" data-cat="workshops">
-        <div class="gallery-thumb" style="background-image: url('img/13.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="networking">
+          <div class="gallery-thumb" style="background-image: url('img/12.jpeg');"></div>
+          <div class="gallery-overlay"><span>Coffee Break · Networking entre participantes</span></div>
         </div>
-        <div class="gallery-overlay"><span>Exposição de Projectos dos Estudantes</span></div>
-      </div>
-
-      <!-- Imagem 14 - Mesa Redonda -->
-      <div class="gallery-item wide" data-cat="palestras">
-        <div class="gallery-thumb" style="background-image: url('img/14.jpeg');">
-          <span></span>
+        <div class="gallery-item" data-cat="workshops">
+          <div class="gallery-thumb" style="background-image: url('img/13.jpeg');"></div>
+          <div class="gallery-overlay"><span>Exposição de Projectos dos Estudantes</span></div>
         </div>
-        <div class="gallery-overlay"><span>Mesa Redonda · Especialistas em Multimédia</span></div>
+        <div class="gallery-item wide" data-cat="palestras">
+          <div class="gallery-thumb" style="background-image: url('img/14.jpeg');"></div>
+          <div class="gallery-overlay"><span>Mesa Redonda · Especialistas em Multimédia</span></div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
   <div class="container">
@@ -185,11 +128,17 @@
       <div class="footer-brand">
         <a href="index.html" class="nav-logo" style="margin-bottom:16px;display:inline-flex;">
           <div class="logo-icon">
-            <img src="img/iscim.png" alt="ISCIM Logo" style="width:100%; height:100%; object-fit:contain;">
+            <img src="img/iscim.png" alt="ISCIM Logo" style="width:40px;height:40px;">
           </div>
           <span class="logo-text" style="font-size:1.2rem;">ISCIM <span>Summit</span></span>
         </a>
         <p>A maior conferência de Multimédia e Comunicação Digital do ISCIM.</p>
+        <div class="social-links-footer">
+          <a href="#" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
       <div class="footer-col">
         <h5>Navegação</h5>
@@ -201,8 +150,8 @@
       <div class="footer-col">
         <h5>Contacto</h5>
         <ul>
-          <li><a href="mailto:info@iscimsummit.ac.mz">info@iscimsummit.ac.mz</a></li>
-          <li><a href="tel:+258840000000">+258 84 000 0000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@iscimsummit.ac.mz">info@iscimsummit.ac.mz</a></li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+258878701405">+258 87 870 1405</a></li>
         </ul>
       </div>
     </div>
@@ -212,6 +161,31 @@
     </div>
   </div>
 </footer>
+
+<script>
+// Filtro da Galeria
+(function() {
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var filter = btn.getAttribute('data-filter');
+      
+      filterBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      
+      galleryItems.forEach(function(item) {
+        if (filter === 'all' || item.getAttribute('data-cat') === filter) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
