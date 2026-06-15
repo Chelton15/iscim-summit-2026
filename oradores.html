@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Oradores | ISCIM Summit 2026</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23F57C00'/><text y='.9em' font-size='72' font-family='serif' font-weight='900' fill='white' x='10'>I</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -16,10 +16,19 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <div class="logo-icon">
-          <img src="img/iscim.png" alt="ISCIM Logo" style="width:100%; height:100%; object-fit:contain;">
+          <img src="img/iscim.png" alt="ISCIM Logo">
         </div>
         <span class="logo-text">ISCIM <span>Summit</span></span>
       </a>
+      
+      <input type="checkbox" id="menu-toggle">
+      
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      
       <ul class="nav-links">
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre</a></li>
@@ -29,200 +38,163 @@
         <li><a href="galeria.html">Galeria</a></li>
         <li><a href="contacto.html" class="nav-cta">Inscrever-se</a></li>
       </ul>
-      <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
-        <span></span><span></span><span></span>
-      </div>
     </div>
   </div>
 </nav>
 
-<section class="section page-header">
-  <div class="container">
-    <h1 class="page-title">Oradores & <span>Especialistas</span></h1>
-    <p class="page-desc">Vozes que inspiram e transformam o ecossistema de Multimédia e Comunicação Digital</p>
-  </div>
-</section>
-
-<section class="section speakers-page">
-  <div class="container">
-    <div class="speakers-grid">
-
-      <div class="speaker-card">
-        <div class="speaker-img">
-          <div class="speaker-avatar">A</div>
-          <div class="speaker-initials"><span>AM</span></div>
-        </div>
-        <div class="speaker-body">
-          <div class="tag">Keynote Speaker</div>
-          <div class="speaker-name">Dr. Armando Muianga</div>
-          <div class="speaker-role">Director Nacional · MCTESTP</div>
-          <p class="speaker-bio">Doutor em Tecnologias da Informação pela Universidade de Lisboa. Líder em políticas de inovação digital e comunicação para Moçambique com mais de 20 anos de experiência.</p>
-          <div class="speaker-socials">
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="speaker-card">
-        <div class="speaker-img">
-          <div class="speaker-avatar">S</div>
-          <div class="speaker-initials"><span>SM</span></div>
-        </div>
-        <div class="speaker-body">
-          <div class="tag">Especialista em IA e Multimédia</div>
-          <div class="speaker-name">Dra. Sílvia Munembe</div>
-          <div class="speaker-role">Prof.ª Associada · UEM</div>
-          <p class="speaker-bio">Investigadora em IA aplicada à comunicação digital. Autora do livro "Inteligência Artificial na Produção de Conteúdo". Fundadora da DigiMoz.</p>
-          <div class="speaker-socials">
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="speaker-card">
-        <div class="speaker-img">
-          <div class="speaker-avatar">F</div>
-          <div class="speaker-initials"><span>FN</span></div>
-        </div>
-        <div class="speaker-body">
-          <div class="tag">Produção Audiovisual</div>
-          <div class="speaker-name">Felicidade Nhambi</div>
-          <div class="speaker-role">Directora de Fotografia · TVM</div>
-          <p class="speaker-bio">Com 15 anos de experiência em produção audiovisual televisiva, Felicidade é reconhecida como uma das mais importantes profissionais do setor em Moçambique.</p>
-          <div class="speaker-socials">
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="speaker-card">
-        <div class="speaker-img">
-          <div class="speaker-avatar">J</div>
-          <div class="speaker-initials"><span>JM</span></div>
-        </div>
-        <div class="speaker-body">
-          <div class="tag">Design Digital</div>
-          <div class="speaker-name">João Mucambe</div>
-          <div class="speaker-role">Senior UX Designer · Vodacom MZ</div>
-          <p class="speaker-bio">Designer com 12 anos de experiência em produtos digitais para o mercado africano. Especialista em acessibilidade e design inclusivo.</p>
-          <div class="speaker-socials">
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-dribbble"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="speaker-card">
-        <div class="speaker-img">
-          <div class="speaker-avatar">C</div>
-          <div class="speaker-initials"><span>CM</span></div>
-        </div>
-        <div class="speaker-body">
-          <div class="tag">Criador de Conteúdo Digital</div>
-          <div class="speaker-name">Carlos Machava</div>
-          <div class="speaker-role">Digital Creator · 500k Seguidores</div>
-          <p class="speaker-bio">Criador de conteúdo digital com mais de 500 mil seguidores nas plataformas sociais. Pioneiro do YouTube em Moçambique com conteúdo em língua portuguesa.</p>
-          <div class="speaker-socials">
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="speaker-card">
-        <div class="speaker-img">
-          <div class="speaker-avatar">L</div>
-          <div class="speaker-initials"><span>LC</span></div>
-        </div>
-        <div class="speaker-body">
-          <div class="tag">Podcast & Áudio</div>
-          <div class="speaker-name">Lurdes Cossa</div>
-          <div class="speaker-role">Podcaster · "Voz de Maputo"</div>
-          <p class="speaker-bio">Jornalista e podcaster, fundadora do podcast "Voz de Maputo" com mais de 80 episódios e audiência em 25 países. Vencedora do Prémio Africano de Inovação em Média 2024.</p>
-          <div class="speaker-socials">
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-spotify"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="speaker-card">
-        <div class="speaker-img">
-          <div class="speaker-avatar">A</div>
-          <div class="speaker-initials"><span>AC</span></div>
-        </div>
-        <div class="speaker-body">
-          <div class="tag">Moderadora</div>
-          <div class="speaker-name">Ana Cossa</div>
-          <div class="speaker-role">Professora · ISCIM</div>
-          <p class="speaker-bio">Mestre em Comunicação Multimédia pela Universidade do Porto. Docente no ISCIM há 8 anos. Coordenadora do Departamento de Design e Comunicação Digital.</p>
-          <div class="speaker-socials">
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="speaker-card">
-        <div class="speaker-img">
-          <div class="speaker-avatar">C</div>
-          <div class="speaker-initials"><span>CZ</span></div>
-        </div>
-        <div class="speaker-body">
-          <div class="tag">Produção Musical</div>
-          <div class="speaker-name">Celso Zimba</div>
-          <div class="speaker-role">Produtor Musical · Moz Beats</div>
-          <p class="speaker-bio">Produtor musical e engenheiro de som com projetos para artistas moçambicanos de renome. Especialista em produção de podcasts e conteúdo de áudio para plataformas digitais.</p>
-          <div class="speaker-socials">
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-soundcloud"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Oradores & <span>Especialistas</span></h1>
+      <p class="page-desc">Vozes que inspiram e transformam o ecossistema de Multimédia e Comunicação Digital</p>
     </div>
+  </section>
 
-    <div class="organizers-section">
-      <h3 class="organizers-title">Equipa Organizadora</h3>
-      <div class="organizers-grid">
-        <div class="organizer-card">
-          <div class="org-avatar">MB</div>
-          <div class="org-name">Marta Bila</div>
-          <div class="org-role">Directora Executiva</div>
+  <section class="section speakers-page">
+    <div class="container">
+      <div class="speakers-grid">
+        <div class="speaker-card">
+          <div class="speaker-img">
+            <div class="speaker-avatar">A</div>
+            <div class="speaker-initials"><span>AM</span></div>
+          </div>
+          <div class="speaker-body">
+            <div class="tag">Keynote Speaker</div>
+            <div class="speaker-name">Dr. Armando Muianga</div>
+            <div class="speaker-role">Director Nacional · MCTESTP</div>
+            <p class="speaker-bio">Doutor em Tecnologias da Informação pela Universidade de Lisboa. Líder em políticas de inovação digital e comunicação para Moçambique.</p>
+            <div class="speaker-socials">
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="organizer-card">
-          <div class="org-avatar">PM</div>
-          <div class="org-name">Pedro Mathe</div>
-          <div class="org-role">Coordenador de Programa</div>
+
+        <div class="speaker-card">
+          <div class="speaker-img">
+            <div class="speaker-avatar">S</div>
+            <div class="speaker-initials"><span>SM</span></div>
+          </div>
+          <div class="speaker-body">
+            <div class="tag">Especialista em IA e Multimédia</div>
+            <div class="speaker-name">Dra. Sílvia Munembe</div>
+            <div class="speaker-role">Prof.ª Associada · UEM</div>
+            <p class="speaker-bio">Investigadora em IA aplicada à comunicação digital. Autora do livro "Inteligência Artificial na Produção de Conteúdo".</p>
+            <div class="speaker-socials">
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="organizer-card">
-          <div class="org-avatar">GN</div>
-          <div class="org-name">Graça Nhavoto</div>
-          <div class="org-role">Comunicação & Marketing</div>
+
+        <div class="speaker-card">
+          <div class="speaker-img">
+            <div class="speaker-avatar">F</div>
+            <div class="speaker-initials"><span>FN</span></div>
+          </div>
+          <div class="speaker-body">
+            <div class="tag">Produção Audiovisual</div>
+            <div class="speaker-name">Felicidade Nhambi</div>
+            <div class="speaker-role">Directora de Fotografia · TVM</div>
+            <p class="speaker-bio">Com 15 anos de experiência em produção audiovisual, é reconhecida como uma das mais importantes profissionais do setor em Moçambique.</p>
+            <div class="speaker-socials">
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="organizer-card">
-          <div class="org-avatar">TM</div>
-          <div class="org-name">Tomás Mussa</div>
-          <div class="org-role">Produtor Audiovisual</div>
+
+        <div class="speaker-card">
+          <div class="speaker-img">
+            <div class="speaker-avatar">J</div>
+            <div class="speaker-initials"><span>JM</span></div>
+          </div>
+          <div class="speaker-body">
+            <div class="tag">Design Digital</div>
+            <div class="speaker-name">João Mucambe</div>
+            <div class="speaker-role">Senior UX Designer · Vodacom MZ</div>
+            <p class="speaker-bio">Designer com 12 anos de experiência em produtos digitais para o mercado africano. Especialista em acessibilidade e design inclusivo.</p>
+            <div class="speaker-socials">
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="organizer-card">
-          <div class="org-avatar">IA</div>
-          <div class="org-name">Ilda Amade</div>
-          <div class="org-role">Relações Institucionais</div>
+
+        <div class="speaker-card">
+          <div class="speaker-img">
+            <div class="speaker-avatar">C</div>
+            <div class="speaker-initials"><span>CM</span></div>
+          </div>
+          <div class="speaker-body">
+            <div class="tag">Criador de Conteúdo Digital</div>
+            <div class="speaker-name">Carlos Machava</div>
+            <div class="speaker-role">Digital Creator · 500k Seguidores</div>
+            <p class="speaker-bio">Criador de conteúdo digital com mais de 500 mil seguidores. Pioneiro do YouTube em Moçambique com conteúdo em língua portuguesa.</p>
+            <div class="speaker-socials">
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="organizer-card">
-          <div class="org-avatar">VC</div>
-          <div class="org-name">Vasco Cuna</div>
-          <div class="org-role">Logística & Operações</div>
+
+        <div class="speaker-card">
+          <div class="speaker-img">
+            <div class="speaker-avatar">L</div>
+            <div class="speaker-initials"><span>LC</span></div>
+          </div>
+          <div class="speaker-body">
+            <div class="tag">Podcast & Áudio</div>
+            <div class="speaker-name">Lurdes Cossa</div>
+            <div class="speaker-role">Podcaster · "Voz de Maputo"</div>
+            <p class="speaker-bio">Jornalista e podcaster, fundadora do podcast "Voz de Maputo" com mais de 80 episódios e audiência em 25 países.</p>
+            <div class="speaker-socials">
+              <a href="#" class="social-icon"><i class="fab fa-spotify"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="organizers-section">
+        <h3 class="organizers-title">Equipa Organizadora</h3>
+        <div class="organizers-grid">
+          <div class="organizer-card">
+            <div class="org-avatar">MB</div>
+            <div class="org-name">Marta Bila</div>
+            <div class="org-role">Directora Executiva</div>
+          </div>
+          <div class="organizer-card">
+            <div class="org-avatar">PM</div>
+            <div class="org-name">Pedro Mathe</div>
+            <div class="org-role">Coordenador de Programa</div>
+          </div>
+          <div class="organizer-card">
+            <div class="org-avatar">GN</div>
+            <div class="org-name">Graça Nhavoto</div>
+            <div class="org-role">Comunicação & Marketing</div>
+          </div>
+          <div class="organizer-card">
+            <div class="org-avatar">TM</div>
+            <div class="org-name">Tomás Mussa</div>
+            <div class="org-role">Produtor Audiovisual</div>
+          </div>
+          <div class="organizer-card">
+            <div class="org-avatar">IA</div>
+            <div class="org-name">Ilda Amade</div>
+            <div class="org-role">Relações Institucionais</div>
+          </div>
+          <div class="organizer-card">
+            <div class="org-avatar">VC</div>
+            <div class="org-name">Vasco Cuna</div>
+            <div class="org-role">Logística & Operações</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
   <div class="container">
@@ -230,11 +202,17 @@
       <div class="footer-brand">
         <a href="index.html" class="nav-logo" style="margin-bottom:16px;display:inline-flex;">
           <div class="logo-icon">
-            <img src="img/iscim.png" alt="ISCIM Logo" style="width:100%; height:100%; object-fit:contain;">
+            <img src="img/iscim.png" alt="ISCIM Logo" style="width:40px;height:40px;">
           </div>
           <span class="logo-text" style="font-size:1.2rem;">ISCIM <span>Summit</span></span>
         </a>
         <p>A maior conferência de Multimédia e Comunicação Digital do ISCIM.</p>
+        <div class="social-links-footer">
+          <a href="#" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
       <div class="footer-col">
         <h5>Navegação</h5>
@@ -247,8 +225,8 @@
       <div class="footer-col">
         <h5>Contacto</h5>
         <ul>
-          <li><a href="mailto:info@iscimsummit.ac.mz">info@iscimsummit.ac.mz</a></li>
-          <li><a href="tel:+258840000000">+258 84 000 0000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@iscimsummit.ac.mz">info@iscimsummit.ac.mz</a></li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+258878701405">+258 87 870 1405</a></li>
         </ul>
       </div>
     </div>
