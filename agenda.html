@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Programa | ISCIM Summit 2026</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23F57C00'/><text y='.9em' font-size='72' font-family='serif' font-weight='900' fill='white' x='10'>I</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -16,10 +16,19 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <div class="logo-icon">
-          <img src="img/iscim.png" alt="ISCIM Logo" style="width:100%; height:100%; object-fit:contain;">
+          <img src="img/iscim.png" alt="ISCIM Logo">
         </div>
         <span class="logo-text">ISCIM <span>Summit</span></span>
       </a>
+      
+      <input type="checkbox" id="menu-toggle">
+      
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      
       <ul class="nav-links">
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre</a></li>
@@ -29,212 +38,211 @@
         <li><a href="galeria.html">Galeria</a></li>
         <li><a href="contacto.html" class="nav-cta">Inscrever-se</a></li>
       </ul>
-      <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
-        <span></span><span></span><span></span>
-      </div>
     </div>
   </div>
 </nav>
 
-<section class="section page-header">
-  <div class="container">
-    <h1 class="page-title">Programa do <span>Evento</span></h1>
-    <p class="page-desc">Três dias intensos de conhecimento, networking e inovação em Multimédia e Comunicação Digital</p>
-  </div>
-</section>
-
-<section class="section agenda-page">
-  <div class="container">
-    <div class="agenda-tabs">
-      <button class="tab-btn active" data-tab="dia1">Dia 1 · 15 Out</button>
-      <button class="tab-btn" data-tab="dia2">Dia 2 · 16 Out</button>
-      <button class="tab-btn" data-tab="dia3">Dia 3 · 17 Out</button>
+<main>
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Programa do <span>Evento</span></h1>
+      <p class="page-desc">Três dias intensos de conhecimento, networking e inovação em Multimédia e Comunicação Digital</p>
     </div>
+  </section>
 
-    <div id="dia1" class="tab-content active">
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">08:00 — 09:00</div>
-            <h4>Credenciamento e Recepção</h4>
-            <p>Registo dos participantes, distribuição de materiais e networking inicial.</p>
+  <section class="section agenda-page">
+    <div class="container">
+      <div class="agenda-tabs">
+        <button class="tab-btn active" data-tab="dia1">Dia 1 · 15 Out</button>
+        <button class="tab-btn" data-tab="dia2">Dia 2 · 16 Out</button>
+        <button class="tab-btn" data-tab="dia3">Dia 3 · 17 Out</button>
+      </div>
+
+      <div id="dia1" class="tab-content active">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">08:00 — 09:00</div>
+              <h4>Credenciamento e Recepção</h4>
+              <p>Registo dos participantes, distribuição de materiais e networking inicial.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot featured"></div>
+            <div class="timeline-card featured">
+              <div class="timeline-time">09:00 — 10:30</div>
+              <h4>Sessão de Abertura & Keynote</h4>
+              <p><strong>Tema:</strong> "O Futuro da Comunicação Digital em Moçambique e o Papel da Multimédia" — Director do ISCIM</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">10:30 — 11:00</div>
+              <h4>Pausa para Café & Networking</h4>
+              <p>Interacção entre participantes e exposição de projectos multimédia de estudantes.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">11:00 — 12:30</div>
+              <h4>Painel: Design Digital para o Contexto Africano</h4>
+              <p>Desafios e soluções para criar identidades visuais que reflectem a cultura moçambicana.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">12:30 — 14:00</div>
+              <h4>Almoço & Feira de Oportunidades</h4>
+              <p>Exposição de empresas parceiras, oportunidades de estágio e projectos colaborativos.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot featured"></div>
+            <div class="timeline-card featured">
+              <div class="timeline-time">14:00 — 15:30</div>
+              <h4>Workshop: Produção de Vídeo com Smartphone</h4>
+              <p>Técnicas profissionais de filmagem e edição usando apenas o telemóvel.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">15:30 — 17:00</div>
+              <h4>Palestra: Monetização de Conteúdo Digital</h4>
+              <p>Estratégias para criadores de conteúdo gerarem receita sustentável em Moçambique.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">17:00 — 19:00</div>
+              <h4>Cocktail de Boas-Vindas</h4>
+              <p>Networking informal com apresentação de talentos locais da comunidade ISCIM.</p>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot featured"></div>
-          <div class="timeline-card featured">
-            <div class="timeline-time">09:00 — 10:30</div>
-            <h4>Sessão de Abertura & Keynote</h4>
-            <p><strong>Tema:</strong> "O Futuro da Comunicação Digital em Moçambique e o Papel da Multimédia" — Director do ISCIM</p>
+      </div>
+
+      <div id="dia2" class="tab-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">08:30 — 09:00</div>
+              <h4>Abertura do Segundo Dia</h4>
+              <p>Recapitulação do Dia 1 e apresentação da agenda do dia.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot featured"></div>
+            <div class="timeline-card featured">
+              <div class="timeline-time">09:00 — 10:30</div>
+              <h4>Keynote: Inteligência Artificial na Criação de Conteúdo</h4>
+              <p>Como a IA está a transformar o trabalho de designers, jornalistas e produtores audiovisuais.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">10:30 — 12:00</div>
+              <h4>Workshop: UI/UX Design com Figma</h4>
+              <p>Prototipagem rápida e testes de usabilidade aplicados a produtos digitais moçambicanos.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">12:00 — 13:30</div>
+              <h4>Almoço</h4>
+              <p>Networking e visita à exposição de trabalhos de estudantes do ISCIM.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot featured"></div>
+            <div class="timeline-card featured">
+              <div class="timeline-time">13:30 — 15:30</div>
+              <h4>Mesa Redonda: Jornalismo Digital no Século XXI</h4>
+              <p>Fact-checking, jornalismo de dados e combate à desinformação em Moçambique.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">15:30 — 17:00</div>
+              <h4>Palestra: Podcasting como Ferramenta de Comunicação</h4>
+              <p>Casos de sucesso de podcasts moçambicanos e estratégias de crescimento de audiência.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">17:00 — 18:00</div>
+              <h4>Pitch Session: Projectos Criativos</h4>
+              <p>Estudantes do ISCIM apresentam os seus projectos multimédia para painel de especialistas.</p>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">10:30 — 11:00</div>
-            <h4>Pausa para Café & Networking</h4>
-            <p>Interacção entre participantes e exposição de projectos multimédia de estudantes.</p>
+      </div>
+
+      <div id="dia3" class="tab-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">08:30 — 10:00</div>
+              <h4>Workshop: Edição de Áudio com Audacity</h4>
+              <p>Técnicas de masterização, remoção de ruído e produção de podcasts profissionais.</p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">11:00 — 12:30</div>
-            <h4>Painel: Design Digital para o Contexto Africano</h4>
-            <p>Desafios e soluções para criar identidades visuais que reflectem a cultura moçambicana sem abrir mão da modernidade.</p>
+          <div class="timeline-item">
+            <div class="timeline-dot featured"></div>
+            <div class="timeline-card featured">
+              <div class="timeline-time">10:00 — 12:00</div>
+              <h4>Painel Internacional: Multimédia Africana no Mundo</h4>
+              <p>Perspectivas de profissionais da SADC sobre a exportação de conteúdo multimédia africano.</p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">12:30 — 14:00</div>
-            <h4>Almoço & Feira de Oportunidades</h4>
-            <p>Exposição de empresas parceiras, oportunidades de estágio e projectos colaborativos.</p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">12:00 — 13:30</div>
+              <h4>Almoço Final & Sessão de Autógrafos</h4>
+              <p>Sessão de autógrafos com os oradores e networking final.</p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot featured"></div>
-          <div class="timeline-card featured">
-            <div class="timeline-time">14:00 — 15:30</div>
-            <h4>Workshop: Produção de Vídeo com Smartphone</h4>
-            <p>Técnicas profissionais de filmagem e edição usando apenas o telemóvel. Vagas limitadas a 60 participantes.</p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">13:30 — 15:00</div>
+              <h4>Hackathon Criativo — Apresentação de Resultados</h4>
+              <p>As equipas apresentam os projectos desenvolvidos ao longo dos 3 dias do Summit.</p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">15:30 — 17:00</div>
-            <h4>Palestra: Monetização de Conteúdo Digital</h4>
-            <p>Estratégias para criadores de conteúdo gerarem receita sustentável em Moçambique.</p>
+          <div class="timeline-item">
+            <div class="timeline-dot featured"></div>
+            <div class="timeline-card featured">
+              <div class="timeline-time">15:00 — 17:00</div>
+              <h4>Cerimónia de Encerramento & Prémios ISCIM</h4>
+              <p>Entrega dos Prémios de Excelência em Multimédia nas categorias: Melhor Produtor, Melhor Designer, Melhor Jornalista Digital e Melhor Projecto Académico.</p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">17:00 — 19:00</div>
-            <h4>Cocktail de Boas-Vindas</h4>
-            <p>Networking informal com apresentação de talentos locais da comunidade ISCIM.</p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">17:00 — 19:00</div>
+              <h4>Festa de Encerramento</h4>
+              <p>Celebração com música ao vivo e exibição de produções audiovisuais dos participantes.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div id="dia2" class="tab-content">
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">08:30 — 09:00</div>
-            <h4>Abertura do Segundo Dia</h4>
-            <p>Recapitulação do Dia 1 e apresentação da agenda do dia.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot featured"></div>
-          <div class="timeline-card featured">
-            <div class="timeline-time">09:00 — 10:30</div>
-            <h4>Keynote: Inteligência Artificial na Criação de Conteúdo</h4>
-            <p>Como a IA está a transformar o trabalho de designers, jornalistas e produtores audiovisuais.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">10:30 — 12:00</div>
-            <h4>Workshop: UI/UX Design com Figma</h4>
-            <p>Prototipagem rápida e testes de usabilidade aplicados a produtos digitais moçambicanos.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">12:00 — 13:30</div>
-            <h4>Almoço</h4>
-            <p>Networking e visita à exposição de trabalhos de estudantes do ISCIM.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot featured"></div>
-          <div class="timeline-card featured">
-            <div class="timeline-time">13:30 — 15:30</div>
-            <h4>Mesa Redonda: Jornalismo Digital no Século XXI</h4>
-            <p>Fact-checking, jornalismo de dados e combate à desinformação em Moçambique.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">15:30 — 17:00</div>
-            <h4>Palestra: Podcasting como Ferramenta de Comunicação</h4>
-            <p>Casos de sucesso de podcasts moçambicanos e estratégias de crescimento de audiência.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">17:00 — 18:00</div>
-            <h4>Pitch Session: Projectos Criativos</h4>
-            <p>Estudantes do ISCIM apresentam os seus projectos multimédia para painel de especialistas.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="dia3" class="tab-content">
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">08:30 — 10:00</div>
-            <h4>Workshop: Edição de Áudio com Audacity</h4>
-            <p>Técnicas de masterização, remoção de ruído e produção de podcasts profissionais.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot featured"></div>
-          <div class="timeline-card featured">
-            <div class="timeline-time">10:00 — 12:00</div>
-            <h4>Painel Internacional: Multimédia Africana no Mundo</h4>
-            <p>Perspectivas de profissionais da SADC sobre a exportação de conteúdo multimédia africano.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">12:00 — 13:30</div>
-            <h4>Almoço Final & Sessão de Autógrafos</h4>
-            <p>Sessão de autógrafos com os oradores e networking final.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">13:30 — 15:00</div>
-            <h4>Hackathon Criativo — Apresentação de Resultados</h4>
-            <p>As equipas apresentam os projectos desenvolvidos ao longo dos 3 dias do Summit.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot featured"></div>
-          <div class="timeline-card featured">
-            <div class="timeline-time">15:00 — 17:00</div>
-            <h4>Cerimónia de Encerramento & Prémios ISCIM</h4>
-            <p>Entrega dos Prémios de Excelência em Multimédia nas categorias: Melhor Produtor, Melhor Designer, Melhor Jornalista Digital e Melhor Projecto Académico.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-time">17:00 — 19:00</div>
-            <h4>Festa de Encerramento</h4>
-            <p>Celebração com música ao vivo e exibição de produções audiovisuais dos participantes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
   <div class="container">
@@ -242,11 +250,17 @@
       <div class="footer-brand">
         <a href="index.html" class="nav-logo" style="margin-bottom:16px;display:inline-flex;">
           <div class="logo-icon">
-            <img src="img/iscim.png" alt="ISCIM Logo" style="width:100%; height:100%; object-fit:contain;">
+            <img src="img/iscim.png" alt="ISCIM Logo" style="width:40px;height:40px;">
           </div>
           <span class="logo-text" style="font-size:1.2rem;">ISCIM <span>Summit</span></span>
         </a>
-        <p>Conectando o ecossistema de Multimédia e Comunicação Digital em Moçambique.</p>
+        <p>A maior conferência de Multimédia e Comunicação Digital do ISCIM.</p>
+        <div class="social-links-footer">
+          <a href="#" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
       <div class="footer-col">
         <h5>Links Rápidos</h5>
@@ -259,8 +273,8 @@
       <div class="footer-col">
         <h5>Contacto</h5>
         <ul>
-          <li><a href="mailto:info@iscimsummit.ac.mz">info@iscimsummit.ac.mz</a></li>
-          <li><a href="tel:+258840000000">+258 84 000 0000</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@iscimsummit.ac.mz">info@iscimsummit.ac.mz</a></li>
+          <li><i class="fas fa-phone"></i> <a href="tel:+258878701405">+258 87 870 1405</a></li>
         </ul>
       </div>
     </div>
@@ -270,6 +284,27 @@
     </div>
   </div>
 </footer>
+
+<script>
+// Tabs da Agenda
+(function() {
+  var tabBtns = document.querySelectorAll('.tab-btn');
+  var tabContents = document.querySelectorAll('.tab-content');
+
+  tabBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var tabId = btn.getAttribute('data-tab');
+      
+      tabBtns.forEach(function(b) { b.classList.remove('active'); });
+      tabContents.forEach(function(c) { c.classList.remove('active'); });
+      
+      btn.classList.add('active');
+      var activeContent = document.getElementById(tabId);
+      if (activeContent) activeContent.classList.add('active');
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
